@@ -89,55 +89,39 @@
             color: white;
         }
 
-
-        /* =========================
-           BACKGROUND
-        ========================= */
-
         .background-orb {
             position: fixed;
-
             width: 420px;
             height: 420px;
-
             border-radius: 50%;
-
             filter: blur(110px);
-
             opacity: 0.13;
-
             pointer-events: none;
-
             z-index: -2;
         }
 
         .orb-one {
             background: var(--pink);
-
             top: -180px;
             left: -150px;
         }
 
         .orb-two {
             background: var(--purple);
-
             right: -170px;
             top: 35%;
         }
 
         .orb-three {
             background: var(--pink-dark);
-
             left: 30%;
             bottom: -250px;
         }
 
         #mouseGlow {
             position: fixed;
-
             width: 320px;
             height: 320px;
-
             border-radius: 50%;
 
             background:
@@ -148,23 +132,14 @@
                 );
 
             transform: translate(-50%, -50%);
-
             pointer-events: none;
-
             z-index: -1;
         }
 
-
-        /* =========================
-           NAVBAR
-        ========================= */
-
         .navbar {
             position: fixed;
-
             top: 18px;
             left: 50%;
-
             transform: translateX(-50%);
 
             width: min(1180px, calc(100% - 30px));
@@ -189,10 +164,8 @@
 
         .brand {
             font-family: "Space Grotesk", sans-serif;
-
             font-size: 21px;
             font-weight: 700;
-
             letter-spacing: -0.5px;
         }
 
@@ -203,141 +176,95 @@
         .nav-links {
             display: flex;
             align-items: center;
-
             gap: 5px;
         }
 
         .nav-links a {
             color: #bcaeb8;
-
             font-size: 13px;
             font-weight: 500;
-
             padding: 9px 11px;
-
             border-radius: 10px;
-
             transition: 0.25s ease;
         }
 
         .nav-links a:hover,
         .nav-links a.active {
             color: white;
-
-            background:
-                rgba(255, 63, 159, 0.1);
+            background: rgba(255, 63, 159, 0.1);
         }
-
-
-        /* =========================
-           GENERAL
-        ========================= */
 
         .container {
             width: min(1120px, calc(100% - 36px));
-
             margin: auto;
         }
 
         section {
             padding: 105px 0;
-
             scroll-margin-top: 90px;
         }
 
         .section-label {
             display: inline-flex;
             align-items: center;
-
             gap: 8px;
-
             color: var(--pink-light);
-
             font-size: 12px;
             font-weight: 700;
-
             letter-spacing: 1.8px;
-
             text-transform: uppercase;
-
             margin-bottom: 14px;
         }
 
         .section-label::before {
             content: "";
-
             width: 22px;
             height: 1px;
-
             background: var(--pink);
         }
 
         .section-title {
             font-family: "Space Grotesk", sans-serif;
-
             font-size: clamp(32px, 5vw, 50px);
-
             line-height: 1.05;
-
             letter-spacing: -1.5px;
-
             margin-bottom: 18px;
         }
 
         .section-description {
             max-width: 650px;
-
             color: var(--muted);
-
             line-height: 1.8;
         }
 
-
-        /* =========================
-           HERO
-        ========================= */
-
         .hero {
             min-height: 100vh;
-
             display: flex;
             align-items: center;
-
             padding-top: 145px;
             padding-bottom: 70px;
         }
 
         .hero-grid {
             display: grid;
-
-            grid-template-columns:
-                1.15fr
-                0.85fr;
-
+            grid-template-columns: 1.15fr 0.85fr;
             gap: 70px;
-
             align-items: center;
         }
 
         .hero-status {
             display: inline-flex;
             align-items: center;
-
             gap: 9px;
-
             padding: 8px 13px;
 
-            border:
-                1px solid
-                rgba(255, 63, 159, 0.2);
+            border: 1px solid rgba(255, 63, 159, 0.2);
 
-            background:
-                rgba(255, 63, 159, 0.055);
+            background: rgba(255, 63, 159, 0.055);
 
             border-radius: 999px;
 
             color: #eec8dc;
-
             font-size: 12px;
             font-weight: 600;
 
@@ -347,34 +274,24 @@
         .hero-status i {
             width: 7px;
             height: 7px;
-
             border-radius: 50%;
-
             background: #ff4ca5;
 
-            box-shadow:
-                0 0 14px #ff4ca5;
+            box-shadow: 0 0 14px #ff4ca5;
         }
 
         .hero h1 {
             font-family: "Space Grotesk", sans-serif;
-
             font-size: clamp(40px, 5.5vw, 68px);
-
             line-height: 1.05;
-
             letter-spacing: -2.8px;
-
             max-width: 800px;
-
             margin-bottom: 28px;
-
             font-weight: 700;
         }
 
         .hero h1 .highlight {
             color: var(--pink);
-
             font-size: inherit;
             font-weight: inherit;
             line-height: inherit;
@@ -383,22 +300,16 @@
 
         .hero-description {
             max-width: 690px;
-
             color: #bcaeb8;
-
             font-size: 16px;
-
             line-height: 1.85;
-
             margin-bottom: 32px;
         }
 
         .hero-actions {
             display: flex;
             align-items: center;
-
             gap: 12px;
-
             flex-wrap: wrap;
         }
 
@@ -406,11 +317,9 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-
             gap: 8px;
 
             min-height: 48px;
-
             padding: 0 19px;
 
             border-radius: 13px;
@@ -467,17 +376,13 @@
 
         .hero-links {
             display: flex;
-
             gap: 22px;
-
             margin-top: 25px;
         }
 
         .hero-links a {
             color: #998a95;
-
             font-size: 12px;
-
             transition: 0.2s;
         }
 
@@ -485,24 +390,15 @@
             color: var(--pink-light);
         }
 
-
-        /* =========================
-           PROFILE
-        ========================= */
-
         .hero-visual {
             position: relative;
-
             display: flex;
-
             justify-content: center;
         }
 
         .profile-wrap {
             position: relative;
-
             width: min(420px, 82vw);
-
             aspect-ratio: 1;
 
             display: flex;
@@ -512,7 +408,6 @@
 
         .profile-wrap::before {
             content: "";
-
             position: absolute;
 
             width: 470px;
@@ -530,7 +425,6 @@
                 );
 
             filter: blur(5px);
-
             z-index: -3;
 
             animation:
@@ -564,7 +458,6 @@
                 infinite;
 
             pointer-events: none;
-
             z-index: 0;
         }
 
@@ -591,7 +484,6 @@
 
         .profile-ring {
             position: absolute;
-
             inset: 0;
 
             border-radius: 50%;
@@ -652,7 +544,6 @@
             content: "";
 
             position: absolute;
-
             inset: 14px;
 
             border-radius: 50%;
@@ -666,17 +557,14 @@
                 rgba(255, 63, 159, 0.08);
 
             z-index: 3;
-
             pointer-events: none;
         }
 
         .profile-card {
             position: absolute;
-
             inset: 42px;
 
             border-radius: 50%;
-
             overflow: hidden;
 
             border:
@@ -705,7 +593,6 @@
             content: "";
 
             position: absolute;
-
             inset: 0;
 
             border-radius: 50%;
@@ -720,7 +607,6 @@
                 );
 
             pointer-events: none;
-
             z-index: 4;
         }
 
@@ -729,7 +615,6 @@
             height: 100%;
 
             object-fit: cover;
-
             display: block;
 
             transition:
@@ -747,7 +632,6 @@
 
         .profile-fallback {
             position: absolute;
-
             inset: 0;
 
             display: none;
@@ -760,7 +644,6 @@
                 sans-serif;
 
             font-size: 90px;
-
             font-weight: 700;
 
             color: var(--pink);
@@ -799,36 +682,21 @@
 
         .profile-badge strong {
             display: block;
-
             color: white;
-
             font-size: 12px;
         }
 
         .profile-badge span {
             display: block;
-
             color: #9d8d98;
-
             font-size: 10px;
-
             margin-top: 3px;
         }
 
-
-        /* =========================
-           ABOUT
-        ========================= */
-
         .about-layout {
             display: grid;
-
-            grid-template-columns:
-                0.8fr
-                1.2fr;
-
+            grid-template-columns: 0.8fr 1.2fr;
             gap: 80px;
-
             align-items: start;
         }
 
@@ -841,7 +709,6 @@
                 clamp(27px, 3vw, 39px);
 
             line-height: 1.2;
-
             letter-spacing: -1px;
         }
 
@@ -851,20 +718,14 @@
 
         .about-text {
             color: var(--muted);
-
             line-height: 1.9;
-
             margin-bottom: 20px;
         }
 
         .about-highlights {
             display: grid;
-
-            grid-template-columns:
-                repeat(2, 1fr);
-
+            grid-template-columns: repeat(2, 1fr);
             gap: 12px;
-
             margin-top: 30px;
         }
 
@@ -879,7 +740,6 @@
                 rgba(255, 255, 255, 0.018);
 
             border-radius: 16px;
-
             transition: 0.25s ease;
         }
 
@@ -901,32 +761,20 @@
                 sans-serif;
 
             font-size: 18px;
-
             color: white;
-
             margin-bottom: 5px;
         }
 
         .about-highlight span {
             color: #91828d;
-
             font-size: 12px;
         }
 
-
-        /* =========================
-           SKILLS
-        ========================= */
-
         .skills-header {
             display: flex;
-
             justify-content: space-between;
-
             gap: 30px;
-
             align-items: end;
-
             margin-bottom: 45px;
         }
 
@@ -934,10 +782,7 @@
             position: relative;
 
             display: grid;
-
-            grid-template-columns:
-                repeat(4, 1fr);
-
+            grid-template-columns: repeat(4, 1fr);
             gap: 18px;
         }
 
@@ -945,7 +790,6 @@
             position: relative;
 
             min-height: 160px;
-
             padding: 25px 20px;
 
             border:
@@ -985,11 +829,8 @@
 
         .skill-number {
             color: #765f6d;
-
             font-size: 10px;
-
             font-weight: 700;
-
             letter-spacing: 1px;
         }
 
@@ -998,7 +839,6 @@
             height: 42px;
 
             display: flex;
-
             align-items: center;
             justify-content: center;
 
@@ -1012,7 +852,6 @@
                 rgba(255, 63, 159, 0.08);
 
             font-size: 18px;
-
             font-weight: 700;
         }
 
@@ -1022,31 +861,19 @@
                 sans-serif;
 
             font-size: 16px;
-
             margin-bottom: 7px;
         }
 
         .skill-card p {
             color: #8f818b;
-
             font-size: 11px;
-
             line-height: 1.6;
         }
 
-
-        /* =========================
-           WORK
-        ========================= */
-
         .work-grid {
             display: grid;
-
-            grid-template-columns:
-                repeat(3, 1fr);
-
+            grid-template-columns: repeat(3, 1fr);
             gap: 18px;
-
             margin-top: 42px;
         }
 
@@ -1063,7 +890,6 @@
                 rgba(255, 255, 255, 0.018);
 
             cursor: pointer;
-
             transition: 0.25s ease;
         }
 
@@ -1082,11 +908,9 @@
             position: relative;
 
             height: 190px;
-
             overflow: hidden;
 
             display: flex;
-
             align-items: center;
             justify-content: center;
 
@@ -1169,7 +993,6 @@
                 sans-serif;
 
             font-size: 45px;
-
             font-weight: 700;
 
             color: rgba(255, 118, 189, 0.8);
@@ -1217,11 +1040,9 @@
             color: var(--pink-light);
 
             font-size: 10px;
-
             font-weight: 700;
 
             letter-spacing: 1px;
-
             text-transform: uppercase;
 
             margin-bottom: 9px;
@@ -1233,31 +1054,19 @@
                 sans-serif;
 
             font-size: 16px;
-
             line-height: 1.35;
-
             margin-bottom: 7px;
         }
 
         .work-info span {
             color: #81727d;
-
             font-size: 11px;
         }
 
-
-        /* =========================
-           CERTIFICATES
-        ========================= */
-
         .certificates-grid {
             display: grid;
-
-            grid-template-columns:
-                repeat(3, 1fr);
-
+            grid-template-columns: repeat(3, 1fr);
             gap: 18px;
-
             margin-top: 42px;
         }
 
@@ -1274,7 +1083,6 @@
                 rgba(255, 255, 255, 0.018);
 
             cursor: pointer;
-
             transition: 0.25s ease;
         }
 
@@ -1291,11 +1099,9 @@
 
         .certificate-image {
             width: 100%;
-
             height: 190px;
 
             display: block;
-
             object-fit: cover;
 
             background:
@@ -1316,22 +1122,14 @@
                 sans-serif;
 
             font-size: 15px;
-
             line-height: 1.35;
-
             margin-bottom: 7px;
         }
 
         .certificate-info span {
             color: #81727d;
-
             font-size: 11px;
         }
-
-
-        /* =========================
-           EXPERIENCE
-        ========================= */
 
         .timeline {
             margin-top: 45px;
@@ -1345,7 +1143,6 @@
 
         .timeline-item {
             position: relative;
-
             padding-bottom: 45px;
         }
 
@@ -1375,13 +1172,9 @@
 
         .timeline-date {
             color: var(--pink-light);
-
             font-size: 11px;
-
             font-weight: 700;
-
             letter-spacing: 1px;
-
             margin-bottom: 9px;
         }
 
@@ -1391,38 +1184,25 @@
                 sans-serif;
 
             font-size: 21px;
-
             margin-bottom: 5px;
         }
 
         .timeline-item h4 {
             color: #a28e9c;
-
             font-size: 12px;
-
             font-weight: 500;
-
             margin-bottom: 12px;
         }
 
         .timeline-item p {
             color: #8e808a;
-
             font-size: 13px;
-
             line-height: 1.75;
-
             max-width: 700px;
         }
 
-
-        /* =========================
-           CONTACT
-        ========================= */
-
         .contact-box {
             position: relative;
-
             overflow: hidden;
 
             padding: 55px;
@@ -1459,39 +1239,29 @@
             letter-spacing: -2px;
 
             max-width: 650px;
-
             margin: 0 auto 16px;
         }
 
         .contact-box p {
             color: #9b8c96;
-
             line-height: 1.8;
-
             max-width: 650px;
-
             margin: 0 auto 30px;
         }
 
         .contact-links {
             display: flex;
-
             gap: 12px;
-
             flex-wrap: wrap;
-
             justify-content: center;
         }
 
         .contact-link {
             display: inline-flex;
-
             align-items: center;
-
             gap: 9px;
 
             min-height: 45px;
-
             padding: 0 15px;
 
             border-radius: 12px;
@@ -1504,7 +1274,6 @@
                 rgba(255, 255, 255, 0.025);
 
             color: #ddd0d8;
-
             font-size: 12px;
 
             transition: 0.2s ease;
@@ -1527,29 +1296,15 @@
             height: 18px;
         }
 
-
-        /* =========================
-           FOOTER
-        ========================= */
-
         footer {
             padding: 30px 0 45px;
-
             color: #665861;
-
             font-size: 11px;
-
             text-align: center;
         }
 
-
-        /* =========================
-           MODALS
-        ========================= */
-
         .modal {
             position: fixed;
-
             inset: 0;
 
             display: none;
@@ -1570,11 +1325,7 @@
 
         .modal.show {
             display: flex;
-
-            animation:
-                modalIn
-                0.2s
-                ease;
+            animation: modalIn 0.2s ease;
         }
 
         @keyframes modalIn {
@@ -1592,11 +1343,9 @@
             position: relative;
 
             width: min(1000px, 95vw);
-
             max-height: 92vh;
 
             display: flex;
-
             flex-direction: column;
 
             background: #100910;
@@ -1606,7 +1355,6 @@
                 rgba(255, 63, 159, 0.25);
 
             border-radius: 20px;
-
             overflow: hidden;
 
             box-shadow:
@@ -1616,9 +1364,7 @@
 
         .modal-header {
             display: flex;
-
             align-items: center;
-
             justify-content: space-between;
 
             padding: 15px 18px;
@@ -1641,7 +1387,6 @@
             height: 36px;
 
             border: 0;
-
             border-radius: 10px;
 
             color: white;
@@ -1650,7 +1395,6 @@
                 rgba(255, 255, 255, 0.06);
 
             cursor: pointer;
-
             font-size: 20px;
 
             transition: 0.2s;
@@ -1665,11 +1409,9 @@
 
         .modal-body {
             padding: 18px;
-
             overflow: auto;
 
             display: flex;
-
             justify-content: center;
         }
 
@@ -1677,16 +1419,11 @@
             display: block;
 
             max-width: 100%;
-
             max-height: 76vh;
 
             object-fit: contain;
-
             border-radius: 10px;
         }
-
-
-        /* WORK MODAL */
 
         .work-modal-content {
             width: min(760px, 95vw);
@@ -1702,11 +1439,8 @@
             color: var(--pink-light);
 
             font-size: 10px;
-
             font-weight: 700;
-
             letter-spacing: 1.4px;
-
             text-transform: uppercase;
 
             margin-bottom: 12px;
@@ -1721,50 +1455,36 @@
                 clamp(27px, 4vw, 38px);
 
             line-height: 1.1;
-
             margin-bottom: 15px;
         }
 
         .work-modal-body p {
             color: #a797a1;
-
             line-height: 1.85;
-
             font-size: 14px;
         }
 
         .work-modal-list {
             margin-top: 22px;
-
             display: grid;
-
             gap: 10px;
         }
 
         .work-modal-list div {
             display: flex;
-
             align-items: flex-start;
-
             gap: 10px;
 
             color: #cbbdc6;
-
             font-size: 13px;
-
             line-height: 1.6;
         }
 
         .work-modal-list div::before {
             content: "✦";
-
             color: var(--pink);
-
             flex-shrink: 0;
         }
-
-
-        /* SKILL MODAL */
 
         .skill-modal-content {
             width: min(550px, 95vw);
@@ -1780,25 +1500,19 @@
                 sans-serif;
 
             font-size: 27px;
-
             margin-bottom: 13px;
         }
 
         .skill-modal-body p {
             color: #a797a1;
-
             line-height: 1.8;
-
             font-size: 14px;
         }
 
         .modal-tags {
             display: flex;
-
             flex-wrap: wrap;
-
             gap: 8px;
-
             margin-top: 20px;
         }
 
@@ -1819,11 +1533,6 @@
             font-size: 10px;
         }
 
-
-        /* =========================
-           REVEAL
-        ========================= */
-
         .reveal {
             opacity: 0;
 
@@ -1842,11 +1551,6 @@
                 translateY(0);
         }
 
-
-        /* =========================
-           RESPONSIVE
-        ========================= */
-
         @media (max-width: 950px) {
 
             .nav-links {
@@ -1855,7 +1559,6 @@
 
             .hero-grid {
                 grid-template-columns: 1fr;
-
                 gap: 60px;
             }
 
@@ -1893,26 +1596,21 @@
 
             .about-layout {
                 grid-template-columns: 1fr;
-
                 gap: 35px;
             }
 
             .skills-tree {
-                grid-template-columns:
-                    repeat(2, 1fr);
+                grid-template-columns: repeat(2, 1fr);
             }
 
             .work-grid {
-                grid-template-columns:
-                    repeat(2, 1fr);
+                grid-template-columns: repeat(2, 1fr);
             }
 
             .certificates-grid {
-                grid-template-columns:
-                    repeat(2, 1fr);
+                grid-template-columns: repeat(2, 1fr);
             }
         }
-
 
         @media (max-width: 650px) {
 
@@ -1930,9 +1628,7 @@
 
             .hero h1 {
                 font-size: 39px;
-
                 letter-spacing: -1.8px;
-
                 line-height: 1.08;
             }
 
@@ -2007,19 +1703,13 @@
     </style>
 </head>
 
-
 <body>
-
-    <!-- Background -->
 
     <div class="background-orb orb-one"></div>
     <div class="background-orb orb-two"></div>
     <div class="background-orb orb-three"></div>
 
     <div id="mouseGlow"></div>
-
-
-    <!-- NAVBAR -->
 
     <nav class="navbar">
 
@@ -2041,9 +1731,6 @@
 
     </nav>
 
-
-    <!-- HERO -->
-
     <main>
 
         <section id="home" class="hero">
@@ -2055,19 +1742,14 @@
                     <div class="hero-content reveal">
 
                         <div class="hero-status">
-
                             <i></i>
-
                             Open to Cybersecurity Opportunities
-
                         </div>
-
 
                         <h1>
                             Turning curiosity into
                             <span class="highlight">cybersecurity.</span>
                         </h1>
-
 
                         <p class="hero-description">
                             I'm Shrouk Ali, a 2026 Cyber Security graduate
@@ -2076,7 +1758,6 @@
                             incident response, vulnerability assessment,
                             and AI-driven security solutions.
                         </p>
-
 
                         <div class="hero-actions">
 
@@ -2090,7 +1771,6 @@
                                 <span>↗</span>
                             </a>
 
-
                             <a
                                 href="#skills"
                                 class="btn btn-outline"
@@ -2100,7 +1780,6 @@
                             </a>
 
                         </div>
-
 
                         <div class="hero-links">
 
@@ -2112,7 +1791,6 @@
                                 GitHub ↗
                             </a>
 
-
                             <a
                                 href="https://www.linkedin.com/in/shrouk-ali-a73177352"
                                 target="_blank"
@@ -2120,7 +1798,6 @@
                             >
                                 LinkedIn ↗
                             </a>
-
 
                             <a href="mailto:shroukk5877@gmail.com">
                                 Gmail ↗
@@ -2130,22 +1807,20 @@
 
                     </div>
 
-
                     <div class="hero-visual reveal">
 
                         <div class="profile-wrap">
 
                             <div class="profile-ring"></div>
 
-
                             <div class="profile-card">
 
+                                <!-- FIXED IMAGE PATH -->
                                 <img
                                     id="profileImage"
-                                    src="./shrouk 4532.jpg"
+                                    src="./shrouk 4532.JPG"
                                     alt="Shrouk Ali"
                                 >
-
 
                                 <div
                                     class="profile-fallback"
@@ -2155,7 +1830,6 @@
                                 </div>
 
                             </div>
-
 
                             <div class="profile-badge">
 
@@ -2179,9 +1853,6 @@
 
         </section>
 
-
-        <!-- ABOUT -->
-
         <section id="about">
 
             <div class="container">
@@ -2193,7 +1864,6 @@
                         <div class="section-label">
                             About Me
                         </div>
-
 
                         <div class="about-intro">
 
@@ -2208,7 +1878,6 @@
 
                     </div>
 
-
                     <div class="reveal">
 
                         <p class="about-text">
@@ -2218,7 +1887,6 @@
                             Cyber Security.
                         </p>
 
-
                         <p class="about-text">
                             My main direction is cybersecurity and
                             security operations, with practical exposure
@@ -2227,7 +1895,6 @@
                             Linux, and security tools.
                         </p>
 
-
                         <p class="about-text">
                             I also enjoy exploring how Artificial
                             Intelligence can support security teams,
@@ -2235,58 +1902,26 @@
                             vulnerability detection.
                         </p>
 
-
                         <div class="about-highlights">
 
                             <div class="about-highlight">
-
-                                <strong>
-                                    2026
-                                </strong>
-
-                                <span>
-                                    Cyber Security Graduate
-                                </span>
-
+                                <strong>2026</strong>
+                                <span>Cyber Security Graduate</span>
                             </div>
 
-
                             <div class="about-highlight">
-
-                                <strong>
-                                    SOC
-                                </strong>
-
-                                <span>
-                                    Security Operations Focus
-                                </span>
-
+                                <strong>SOC</strong>
+                                <span>Security Operations Focus</span>
                             </div>
 
-
                             <div class="about-highlight">
-
-                                <strong>
-                                    AI + Security
-                                </strong>
-
-                                <span>
-                                    Intelligent Security Solutions
-                                </span>
-
+                                <strong>AI + Security</strong>
+                                <span>Intelligent Security Solutions</span>
                             </div>
 
-
                             <div class="about-highlight">
-
-                                <strong>
-                                    Hands-on
-                                </strong>
-
-                                <span>
-                                    Labs & Practical Training
-                                </span>
-
+                                <strong>Hands-on</strong>
+                                <span>Labs & Practical Training</span>
                             </div>
 
                         </div>
@@ -2298,9 +1933,6 @@
             </div>
 
         </section>
-
-
-        <!-- SKILLS -->
 
         <section id="skills">
 
@@ -2322,25 +1954,15 @@
 
                 </div>
 
-
                 <div class="skills-tree">
 
-                    <div
-                        class="skill-card reveal"
-                        data-skill="soc"
-                    >
+                    <div class="skill-card reveal" data-skill="soc">
 
-                        <span class="skill-number">
-                            01
-                        </span>
+                        <span class="skill-number">01</span>
 
-                        <div class="skill-icon">
-                            ◉
-                        </div>
+                        <div class="skill-icon">◉</div>
 
-                        <h3>
-                            SOC Analysis
-                        </h3>
+                        <h3>SOC Analysis</h3>
 
                         <p>
                             Monitoring, alert triage,
@@ -2349,23 +1971,13 @@
 
                     </div>
 
+                    <div class="skill-card reveal" data-skill="network">
 
-                    <div
-                        class="skill-card reveal"
-                        data-skill="network"
-                    >
+                        <span class="skill-number">02</span>
 
-                        <span class="skill-number">
-                            02
-                        </span>
+                        <div class="skill-icon">◇</div>
 
-                        <div class="skill-icon">
-                            ◇
-                        </div>
-
-                        <h3>
-                            Network Security
-                        </h3>
+                        <h3>Network Security</h3>
 
                         <p>
                             Networking fundamentals,
@@ -2374,23 +1986,13 @@
 
                     </div>
 
+                    <div class="skill-card reveal" data-skill="vulnerability">
 
-                    <div
-                        class="skill-card reveal"
-                        data-skill="vulnerability"
-                    >
+                        <span class="skill-number">03</span>
 
-                        <span class="skill-number">
-                            03
-                        </span>
+                        <div class="skill-icon">⚡</div>
 
-                        <div class="skill-icon">
-                            ⚡
-                        </div>
-
-                        <h3>
-                            Vulnerability Assessment
-                        </h3>
+                        <h3>Vulnerability Assessment</h3>
 
                         <p>
                             Finding, understanding and documenting
@@ -2399,23 +2001,13 @@
 
                     </div>
 
+                    <div class="skill-card reveal" data-skill="web">
 
-                    <div
-                        class="skill-card reveal"
-                        data-skill="web"
-                    >
+                        <span class="skill-number">04</span>
 
-                        <span class="skill-number">
-                            04
-                        </span>
+                        <div class="skill-icon">&lt;/&gt;</div>
 
-                        <div class="skill-icon">
-                            &lt;/&gt;
-                        </div>
-
-                        <h3>
-                            Web Security
-                        </h3>
+                        <h3>Web Security</h3>
 
                         <p>
                             OWASP concepts, web testing
@@ -2424,23 +2016,13 @@
 
                     </div>
 
+                    <div class="skill-card reveal" data-skill="linux">
 
-                    <div
-                        class="skill-card reveal"
-                        data-skill="linux"
-                    >
+                        <span class="skill-number">05</span>
 
-                        <span class="skill-number">
-                            05
-                        </span>
+                        <div class="skill-icon">$</div>
 
-                        <div class="skill-icon">
-                            $
-                        </div>
-
-                        <h3>
-                            Linux
-                        </h3>
+                        <h3>Linux</h3>
 
                         <p>
                             Linux fundamentals and
@@ -2449,23 +2031,13 @@
 
                     </div>
 
+                    <div class="skill-card reveal" data-skill="tools">
 
-                    <div
-                        class="skill-card reveal"
-                        data-skill="tools"
-                    >
+                        <span class="skill-number">06</span>
 
-                        <span class="skill-number">
-                            06
-                        </span>
+                        <div class="skill-icon">+</div>
 
-                        <div class="skill-icon">
-                            +
-                        </div>
-
-                        <h3>
-                            Security Tools
-                        </h3>
+                        <h3>Security Tools</h3>
 
                         <p>
                             Wireshark, Nmap, Burp Suite,
@@ -2474,23 +2046,13 @@
 
                     </div>
 
+                    <div class="skill-card reveal" data-skill="programming">
 
-                    <div
-                        class="skill-card reveal"
-                        data-skill="programming"
-                    >
+                        <span class="skill-number">07</span>
 
-                        <span class="skill-number">
-                            07
-                        </span>
+                        <div class="skill-icon">{}</div>
 
-                        <div class="skill-icon">
-                            {}
-                        </div>
-
-                        <h3>
-                            Programming
-                        </h3>
+                        <h3>Programming</h3>
 
                         <p>
                             Python, Java, C#, SQL and
@@ -2499,23 +2061,13 @@
 
                     </div>
 
+                    <div class="skill-card reveal" data-skill="ai">
 
-                    <div
-                        class="skill-card reveal"
-                        data-skill="ai"
-                    >
+                        <span class="skill-number">08</span>
 
-                        <span class="skill-number">
-                            08
-                        </span>
+                        <div class="skill-icon">AI</div>
 
-                        <div class="skill-icon">
-                            AI
-                        </div>
-
-                        <h3>
-                            AI Security
-                        </h3>
+                        <h3>AI Security</h3>
 
                         <p>
                             Applying AI concepts to vulnerability
@@ -2529,9 +2081,6 @@
             </div>
 
         </section>
-
-
-        <!-- WORK -->
 
         <section id="work">
 
@@ -2555,26 +2104,17 @@
 
                 </div>
 
-
                 <div class="work-grid">
 
-                    <div
-                        class="work-card reveal"
-                        data-work="fortress"
-                    >
+                    <div class="work-card reveal" data-work="fortress">
 
                         <div class="work-preview">
 
-                            <div class="work-number">
-                                01
-                            </div>
+                            <div class="work-number">01</div>
 
-                            <div class="work-icon">
-                                ◈
-                            </div>
+                            <div class="work-icon">◈</div>
 
                         </div>
-
 
                         <div class="work-info">
 
@@ -2594,24 +2134,15 @@
 
                     </div>
 
-
-                    <div
-                        class="work-card reveal"
-                        data-work="securecorp"
-                    >
+                    <div class="work-card reveal" data-work="securecorp">
 
                         <div class="work-preview">
 
-                            <div class="work-number">
-                                02
-                            </div>
+                            <div class="work-number">02</div>
 
-                            <div class="work-icon">
-                                ◇
-                            </div>
+                            <div class="work-icon">◇</div>
 
                         </div>
-
 
                         <div class="work-info">
 
@@ -2631,24 +2162,15 @@
 
                     </div>
 
-
-                    <div
-                        class="work-card reveal"
-                        data-work="security-labs"
-                    >
+                    <div class="work-card reveal" data-work="security-labs">
 
                         <div class="work-preview">
 
-                            <div class="work-number">
-                                03
-                            </div>
+                            <div class="work-number">03</div>
 
-                            <div class="work-icon">
-                                ⚡
-                            </div>
+                            <div class="work-icon">⚡</div>
 
                         </div>
-
 
                         <div class="work-info">
 
@@ -2668,24 +2190,15 @@
 
                     </div>
 
-
-                    <div
-                        class="work-card reveal"
-                        data-work="calculator"
-                    >
+                    <div class="work-card reveal" data-work="calculator">
 
                         <div class="work-preview">
 
-                            <div class="work-number">
-                                04
-                            </div>
+                            <div class="work-number">04</div>
 
-                            <div class="work-icon">
-                                &lt;/&gt;
-                            </div>
+                            <div class="work-icon">&lt;/&gt;</div>
 
                         </div>
-
 
                         <div class="work-info">
 
@@ -2705,24 +2218,15 @@
 
                     </div>
 
-
-                    <div
-                        class="work-card reveal"
-                        data-work="database"
-                    >
+                    <div class="work-card reveal" data-work="database">
 
                         <div class="work-preview">
 
-                            <div class="work-number">
-                                05
-                            </div>
+                            <div class="work-number">05</div>
 
-                            <div class="work-icon">
-                                DB
-                            </div>
+                            <div class="work-icon">DB</div>
 
                         </div>
-
 
                         <div class="work-info">
 
@@ -2743,24 +2247,15 @@
 
                     </div>
 
-
-                    <div
-                        class="work-card reveal"
-                        data-work="soc"
-                    >
+                    <div class="work-card reveal" data-work="soc">
 
                         <div class="work-preview">
 
-                            <div class="work-number">
-                                06
-                            </div>
+                            <div class="work-number">06</div>
 
-                            <div class="work-icon">
-                                ◉
-                            </div>
+                            <div class="work-icon">◉</div>
 
                         </div>
-
 
                         <div class="work-info">
 
@@ -2786,9 +2281,6 @@
 
         </section>
 
-
-        <!-- CERTIFICATES -->
-
         <section id="certificates">
 
             <div class="container">
@@ -2805,11 +2297,7 @@
 
                 </div>
 
-
                 <div class="certificates-grid">
-
-
-                    <!-- CERTIFICATE 1 -->
 
                     <div
                         class="certificate-card reveal"
@@ -2825,20 +2313,13 @@
 
                         <div class="certificate-info">
 
-                            <h3>
-                                Pre Security
-                            </h3>
+                            <h3>Pre Security</h3>
 
-                            <span>
-                                TryHackMe
-                            </span>
+                            <span>TryHackMe</span>
 
                         </div>
 
                     </div>
-
-
-                    <!-- CERTIFICATE 2 -->
 
                     <div
                         class="certificate-card reveal"
@@ -2866,9 +2347,6 @@
 
                     </div>
 
-
-                    <!-- CERTIFICATE 3 -->
-
                     <div
                         class="certificate-card reveal"
                         data-image="./assets/certificates/CN%20fundamentals.png"
@@ -2883,20 +2361,13 @@
 
                         <div class="certificate-info">
 
-                            <h3>
-                                CN Fundamentals
-                            </h3>
+                            <h3>CN Fundamentals</h3>
 
-                            <span>
-                                Networking
-                            </span>
+                            <span>Networking</span>
 
                         </div>
 
                     </div>
-
-
-                    <!-- CERTIFICATE 4 -->
 
                     <div
                         class="certificate-card reveal"
@@ -2912,20 +2383,13 @@
 
                         <div class="certificate-info">
 
-                            <h3>
-                                Introduction to Database
-                            </h3>
+                            <h3>Introduction to Database</h3>
 
-                            <span>
-                                Database Fundamentals
-                            </span>
+                            <span>Database Fundamentals</span>
 
                         </div>
 
                     </div>
-
-
-                    <!-- CERTIFICATE 5 -->
 
                     <div
                         class="certificate-card reveal"
@@ -2941,20 +2405,13 @@
 
                         <div class="certificate-info">
 
-                            <h3>
-                                Building a Calculator
-                            </h3>
+                            <h3>Building a Calculator</h3>
 
-                            <span>
-                                Programming
-                            </span>
+                            <span>Programming</span>
 
                         </div>
 
                     </div>
-
-
-                    <!-- CERTIFICATE 6 -->
 
                     <div
                         class="certificate-card reveal"
@@ -2970,20 +2427,13 @@
 
                         <div class="certificate-info">
 
-                            <h3>
-                                Building a Company
-                            </h3>
+                            <h3>Building a Company</h3>
 
-                            <span>
-                                Training
-                            </span>
+                            <span>Training</span>
 
                         </div>
 
                     </div>
-
-
-                    <!-- CERTIFICATE 7 -->
 
                     <div
                         class="certificate-card reveal"
@@ -3011,9 +2461,6 @@
 
                     </div>
 
-
-                    <!-- CERTIFICATE 8 -->
-
                     <div
                         class="certificate-card reveal"
                         data-image="./assets/certificates/intro%20to%20web%20development.png"
@@ -3039,9 +2486,6 @@
                         </div>
 
                     </div>
-
-
-                    <!-- CERTIFICATE 9 -->
 
                     <div
                         class="certificate-card reveal"
@@ -3069,9 +2513,6 @@
 
                     </div>
 
-
-                    <!-- CERTIFICATE 10 -->
-
                     <div
                         class="certificate-card reveal"
                         data-image="./assets/certificates/java%20programming.png"
@@ -3086,27 +2527,19 @@
 
                         <div class="certificate-info">
 
-                            <h3>
-                                Java Programming
-                            </h3>
+                            <h3>Java Programming</h3>
 
-                            <span>
-                                Programming
-                            </span>
+                            <span>Programming</span>
 
                         </div>
 
                     </div>
-
 
                 </div>
 
             </div>
 
         </section>
-
-
-        <!-- EXPERIENCE -->
 
         <section id="experience">
 
@@ -3123,7 +2556,6 @@
                     </h2>
 
                 </div>
-
 
                 <div class="timeline">
 
@@ -3150,7 +2582,6 @@
 
                     </div>
 
-
                     <div class="timeline-item reveal">
 
                         <div class="timeline-date">
@@ -3175,7 +2606,6 @@
 
                     </div>
 
-
                     <div class="timeline-item reveal">
 
                         <div class="timeline-date">
@@ -3198,7 +2628,6 @@
                         </p>
 
                     </div>
-
 
                     <div class="timeline-item reveal">
 
@@ -3230,9 +2659,6 @@
 
         </section>
 
-
-        <!-- CONTACT -->
-
         <section id="contact">
 
             <div class="container">
@@ -3253,7 +2679,6 @@
                         where I can keep learning while creating
                         meaningful security solutions.
                     </p>
-
 
                     <div class="contact-links">
 
@@ -3278,7 +2703,6 @@
 
                         </a>
 
-
                         <a
                             class="contact-link"
                             href="https://www.linkedin.com/in/shrouk-ali-a73177352"
@@ -3299,7 +2723,6 @@
                             LinkedIn
 
                         </a>
-
 
                         <a
                             class="contact-link"
@@ -3330,7 +2753,6 @@
 
                         </a>
 
-
                         <a
                             class="contact-link"
                             href="./assets/CV/CV.png"
@@ -3349,9 +2771,6 @@
         </section>
 
     </main>
-
-
-    <!-- CERTIFICATE MODAL -->
 
     <div
         class="modal"
@@ -3378,7 +2797,6 @@
 
             </div>
 
-
             <div class="modal-body">
 
                 <img
@@ -3392,9 +2810,6 @@
         </div>
 
     </div>
-
-
-    <!-- WORK MODAL -->
 
     <div
         class="modal"
@@ -3421,7 +2836,6 @@
 
             </div>
 
-
             <div class="work-modal-body">
 
                 <span
@@ -3431,16 +2845,13 @@
                     Project
                 </span>
 
-
                 <h3 id="workModalTitle">
                     Project Title
                 </h3>
 
-
                 <p id="workModalDescription">
                     Project description.
                 </p>
-
 
                 <div
                     class="work-modal-list"
@@ -3452,9 +2863,6 @@
         </div>
 
     </div>
-
-
-    <!-- SKILL MODAL -->
 
     <div
         class="modal"
@@ -3481,18 +2889,15 @@
 
             </div>
 
-
             <div class="skill-modal-body">
 
                 <h3 id="skillModalTitle">
                     Skill
                 </h3>
 
-
                 <p id="skillModalDescription">
                     Skill description.
                 </p>
-
 
                 <div
                     class="modal-tags"
@@ -3505,14 +2910,7 @@
 
     </div>
 
-
-    <!-- JAVASCRIPT -->
-
     <script>
-
-        /* =========================
-           MOUSE GLOW
-        ========================= */
 
         const mouseGlow =
             document.getElementById("mouseGlow");
@@ -3530,14 +2928,8 @@
             }
         );
 
-
-        /* =========================
-           SCROLL REVEAL
-        ========================= */
-
         const revealElements =
             document.querySelectorAll(".reveal");
-
 
         const revealObserver =
             new IntersectionObserver(
@@ -3569,7 +2961,6 @@
                 }
             );
 
-
         revealElements.forEach(
             function (element) {
 
@@ -3580,22 +2971,15 @@
             }
         );
 
-
-        /* =========================
-           PROFILE IMAGE
-        ========================= */
-
         const profileImage =
             document.getElementById(
                 "profileImage"
             );
 
-
         const profileFallback =
             document.getElementById(
                 "profileFallback"
             );
-
 
         profileImage.addEventListener(
             "error",
@@ -3610,40 +2994,30 @@
             }
         );
 
-
-        /* =========================
-           CERTIFICATE MODAL
-        ========================= */
-
         const certificateModal =
             document.getElementById(
                 "certificateModal"
             );
-
 
         const certificateModalImage =
             document.getElementById(
                 "certificateModalImage"
             );
 
-
         const certificateTitle =
             document.getElementById(
                 "certificateTitle"
             );
-
 
         const certificateClose =
             document.getElementById(
                 "certificateClose"
             );
 
-
         const certificateCards =
             document.querySelectorAll(
                 ".certificate-card"
             );
-
 
         certificateCards.forEach(
             function (card) {
@@ -3652,7 +3026,6 @@
                     card.querySelector(
                         ".certificate-image"
                     );
-
 
                 image.addEventListener(
                     "error",
@@ -3695,7 +3068,6 @@
                     }
                 );
 
-
                 card.addEventListener(
                     "click",
                     function () {
@@ -3706,29 +3078,23 @@
                         const title =
                             card.dataset.title;
 
-
                         certificateTitle.textContent =
                             title;
-
 
                         certificateModalImage.src =
                             imagePath;
 
-
                         certificateModalImage.alt =
                             title;
-
 
                         certificateModal.classList.add(
                             "show"
                         );
 
-
                         certificateModal.setAttribute(
                             "aria-hidden",
                             "false"
                         );
-
 
                         document.body.style.overflow =
                             "hidden";
@@ -3738,7 +3104,6 @@
 
             }
         );
-
 
         function closeCertificateModal() {
 
@@ -3757,12 +3122,10 @@
 
         }
 
-
         certificateClose.addEventListener(
             "click",
             closeCertificateModal
         );
-
 
         certificateModal.addEventListener(
             "click",
@@ -3780,46 +3143,35 @@
             }
         );
 
-
-        /* =========================
-           WORK MODAL
-        ========================= */
-
         const workModal =
             document.getElementById(
                 "workModal"
             );
-
 
         const workClose =
             document.getElementById(
                 "workClose"
             );
 
-
         const workModalLabel =
             document.getElementById(
                 "workModalLabel"
             );
-
 
         const workModalTitle =
             document.getElementById(
                 "workModalTitle"
             );
 
-
         const workModalDescription =
             document.getElementById(
                 "workModalDescription"
             );
 
-
         const workModalList =
             document.getElementById(
                 "workModalList"
             );
-
 
         const workData = {
 
@@ -3844,7 +3196,6 @@
 
             },
 
-
             securecorp: {
 
                 label:
@@ -3866,7 +3217,6 @@
                 ]
 
             },
-
 
             "security-labs": {
 
@@ -3890,7 +3240,6 @@
 
             },
 
-
             calculator: {
 
                 label:
@@ -3910,7 +3259,6 @@
                 ]
 
             },
-
 
             database: {
 
@@ -3932,7 +3280,6 @@
                 ]
 
             },
-
 
             soc: {
 
@@ -3958,7 +3305,6 @@
 
         };
 
-
         document
             .querySelectorAll(".work-card")
             .forEach(
@@ -3978,22 +3324,17 @@
                                 return;
                             }
 
-
                             workModalLabel.textContent =
                                 data.label;
-
 
                             workModalTitle.textContent =
                                 data.title;
 
-
                             workModalDescription.textContent =
                                 data.description;
 
-
                             workModalList.innerHTML =
                                 "";
-
 
                             data.items.forEach(
                                 function (item) {
@@ -4013,17 +3354,14 @@
                                 }
                             );
 
-
                             workModal.classList.add(
                                 "show"
                             );
-
 
                             workModal.setAttribute(
                                 "aria-hidden",
                                 "false"
                             );
-
 
                             document.body.style.overflow =
                                 "hidden";
@@ -4033,7 +3371,6 @@
 
                 }
             );
-
 
         function closeWorkModal() {
 
@@ -4051,12 +3388,10 @@
 
         }
 
-
         workClose.addEventListener(
             "click",
             closeWorkModal
         );
-
 
         workModal.addEventListener(
             "click",
@@ -4074,40 +3409,30 @@
             }
         );
 
-
-        /* =========================
-           SKILLS MODAL
-        ========================= */
-
         const skillModal =
             document.getElementById(
                 "skillModal"
             );
-
 
         const skillClose =
             document.getElementById(
                 "skillClose"
             );
 
-
         const skillModalTitle =
             document.getElementById(
                 "skillModalTitle"
             );
-
 
         const skillModalDescription =
             document.getElementById(
                 "skillModalDescription"
             );
 
-
         const skillModalTags =
             document.getElementById(
                 "skillModalTags"
             );
-
 
         const skillData = {
 
@@ -4129,7 +3454,6 @@
 
             },
 
-
             network: {
 
                 title:
@@ -4149,7 +3473,6 @@
 
             },
 
-
             vulnerability: {
 
                 title:
@@ -4166,7 +3489,6 @@
                 ]
 
             },
-
 
             web: {
 
@@ -4185,7 +3507,6 @@
 
             },
 
-
             linux: {
 
                 title:
@@ -4202,7 +3523,6 @@
                 ]
 
             },
-
 
             tools: {
 
@@ -4223,7 +3543,6 @@
 
             },
 
-
             programming: {
 
                 title:
@@ -4241,7 +3560,6 @@
                 ]
 
             },
-
 
             ai: {
 
@@ -4263,7 +3581,6 @@
 
         };
 
-
         document
             .querySelectorAll(".skill-card")
             .forEach(
@@ -4283,18 +3600,14 @@
                                 return;
                             }
 
-
                             skillModalTitle.textContent =
                                 data.title;
-
 
                             skillModalDescription.textContent =
                                 data.description;
 
-
                             skillModalTags.innerHTML =
                                 "";
-
 
                             data.tags.forEach(
                                 function (tag) {
@@ -4317,17 +3630,14 @@
                                 }
                             );
 
-
                             skillModal.classList.add(
                                 "show"
                             );
-
 
                             skillModal.setAttribute(
                                 "aria-hidden",
                                 "false"
                             );
-
 
                             document.body.style.overflow =
                                 "hidden";
@@ -4337,7 +3647,6 @@
 
                 }
             );
-
 
         function closeSkillModal() {
 
@@ -4355,12 +3664,10 @@
 
         }
 
-
         skillClose.addEventListener(
             "click",
             closeSkillModal
         );
-
 
         skillModal.addEventListener(
             "click",
@@ -4378,11 +3685,6 @@
             }
         );
 
-
-        /* =========================
-           ESCAPE
-        ========================= */
-
         document.addEventListener(
             "keydown",
             function (event) {
@@ -4393,32 +3695,22 @@
                     return;
                 }
 
-
                 closeCertificateModal();
-
                 closeWorkModal();
-
                 closeSkillModal();
 
             }
         );
-
-
-        /* =========================
-           ACTIVE NAV
-        ========================= */
 
         const sections =
             document.querySelectorAll(
                 "main section"
             );
 
-
         const navItems =
             document.querySelectorAll(
                 ".nav-links a"
             );
-
 
         window.addEventListener(
             "scroll",
@@ -4427,13 +3719,11 @@
                 let current =
                     "home";
 
-
                 sections.forEach(
                     function (section) {
 
                         const top =
                             section.offsetTop - 150;
-
 
                         if (
                             window.scrollY >=
@@ -4448,14 +3738,12 @@
                     }
                 );
 
-
                 navItems.forEach(
                     function (link) {
 
                         link.classList.remove(
                             "active"
                         );
-
 
                         if (
                             link.getAttribute(
