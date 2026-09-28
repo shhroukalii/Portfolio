@@ -959,6 +959,9 @@
                 12s
                 linear
                 infinite;
+
+            z-index: 2;
+            pointer-events: none;
         }
 
         .work-preview::after {
@@ -974,6 +977,9 @@
             border:
                 1px solid
                 rgba(255, 118, 189, 0.28);
+
+            z-index: 2;
+            pointer-events: none;
         }
 
         @keyframes workRotate {
@@ -981,6 +987,30 @@
             to {
                 transform: rotate(360deg);
             }
+        }
+
+        /* PROJECT IMAGES */
+        .work-project-image {
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+            display: block;
+
+            position: relative;
+            z-index: 1;
+
+            transition:
+                transform 0.45s ease,
+                filter 0.45s ease;
+        }
+
+        .work-card:hover .work-project-image {
+            transform: scale(1.04);
+
+            filter:
+                saturate(1.08)
+                contrast(1.03);
         }
 
         .work-number {
@@ -1021,13 +1051,15 @@
             color: var(--pink-light);
 
             background:
-                rgba(10, 5, 10, 0.65);
+                rgba(10, 5, 10, 0.75);
 
             border:
                 1px solid
                 rgba(255, 63, 159, 0.18);
 
             font-size: 14px;
+
+            z-index: 4;
         }
 
         .work-info {
@@ -1733,6 +1765,7 @@
 
     <main>
 
+        <!-- HERO -->
         <section id="home" class="hero">
 
             <div class="container">
@@ -1852,6 +1885,7 @@
 
         </section>
 
+
         <!-- ABOUT -->
         <section id="about">
 
@@ -1954,6 +1988,8 @@
 
         </section>
 
+
+        <!-- SKILLS -->
         <section id="skills">
 
             <div class="container">
@@ -2102,6 +2138,8 @@
 
         </section>
 
+
+        <!-- WORK -->
         <section id="work">
 
             <div class="container">
@@ -2126,13 +2164,23 @@
 
                 <div class="work-grid">
 
-                    <div class="work-card reveal" data-work="fortress">
+                    <!-- PROJECT 1 -->
+                    <div
+                        class="work-card reveal"
+                        data-work="fortress"
+                    >
 
                         <div class="work-preview">
 
-                            <div class="work-number">01</div>
+                            <img
+                                class="work-project-image"
+                                src="./assets/projects/cyber%20AI%20fortress.png"
+                                alt="Cyber AI Fortress project"
+                            >
 
-                            <div class="work-icon">◈</div>
+                            <div class="work-icon">
+                                ◈
+                            </div>
 
                         </div>
 
@@ -2154,13 +2202,24 @@
 
                     </div>
 
-                    <div class="work-card reveal" data-work="securecorp">
+
+                    <!-- PROJECT 2 -->
+                    <div
+                        class="work-card reveal"
+                        data-work="securecorp"
+                    >
 
                         <div class="work-preview">
 
-                            <div class="work-number">02</div>
+                            <img
+                                class="work-project-image"
+                                src="./assets/projects/securecorp.png"
+                                alt="SecureCorp Network Lab project"
+                            >
 
-                            <div class="work-icon">◇</div>
+                            <div class="work-icon">
+                                ◇
+                            </div>
 
                         </div>
 
@@ -2182,13 +2241,24 @@
 
                     </div>
 
-                    <div class="work-card reveal" data-work="security-labs">
+
+                    <!-- PROJECT 3 -->
+                    <div
+                        class="work-card reveal"
+                        data-work="security-labs"
+                    >
 
                         <div class="work-preview">
 
-                            <div class="work-number">03</div>
+                            <img
+                                class="work-project-image"
+                                src="./assets/projects/threat-vulnerability.png"
+                                alt="Threat and Vulnerability Labs project"
+                            >
 
-                            <div class="work-icon">⚡</div>
+                            <div class="work-icon">
+                                ⚡
+                            </div>
 
                         </div>
 
@@ -2210,13 +2280,24 @@
 
                     </div>
 
-                    <div class="work-card reveal" data-work="calculator">
+
+                    <!-- PROJECT 4 -->
+                    <div
+                        class="work-card reveal"
+                        data-work="calculator"
+                    >
 
                         <div class="work-preview">
 
-                            <div class="work-number">04</div>
+                            <img
+                                class="work-project-image"
+                                src="./assets/projects/calculator.png"
+                                alt="Calculator project"
+                            >
 
-                            <div class="work-icon">&lt;/&gt;</div>
+                            <div class="work-icon">
+                                &lt;/&gt;
+                            </div>
 
                         </div>
 
@@ -2238,13 +2319,24 @@
 
                     </div>
 
-                    <div class="work-card reveal" data-work="database">
+
+                    <!-- PROJECT 5 -->
+                    <div
+                        class="work-card reveal"
+                        data-work="database"
+                    >
 
                         <div class="work-preview">
 
-                            <div class="work-number">05</div>
+                            <img
+                                class="work-project-image"
+                                src="./assets/projects/database.png"
+                                alt="Company Database project"
+                            >
 
-                            <div class="work-icon">DB</div>
+                            <div class="work-icon">
+                                DB
+                            </div>
 
                         </div>
 
@@ -2267,13 +2359,24 @@
 
                     </div>
 
-                    <div class="work-card reveal" data-work="soc">
+
+                    <!-- PROJECT 6 -->
+                    <div
+                        class="work-card reveal"
+                        data-work="soc"
+                    >
 
                         <div class="work-preview">
 
-                            <div class="work-number">06</div>
+                            <img
+                                class="work-project-image"
+                                src="./assets/projects/soc-monitoring.png"
+                                alt="SOC and Security Monitoring project"
+                            >
 
-                            <div class="work-icon">◉</div>
+                            <div class="work-icon">
+                                ◉
+                            </div>
 
                         </div>
 
@@ -2301,6 +2404,8 @@
 
         </section>
 
+
+        <!-- CERTIFICATES -->
         <section id="certificates">
 
             <div class="container">
@@ -2333,13 +2438,18 @@
 
                         <div class="certificate-info">
 
-                            <h3>Pre Security</h3>
+                            <h3>
+                                Pre Security
+                            </h3>
 
-                            <span>TryHackMe</span>
+                            <span>
+                                TryHackMe
+                            </span>
 
                         </div>
 
                     </div>
+
 
                     <div
                         class="certificate-card reveal"
@@ -2367,6 +2477,7 @@
 
                     </div>
 
+
                     <div
                         class="certificate-card reveal"
                         data-image="./assets/certificates/CN%20fundamentals.png"
@@ -2381,13 +2492,18 @@
 
                         <div class="certificate-info">
 
-                            <h3>CN Fundamentals</h3>
+                            <h3>
+                                CN Fundamentals
+                            </h3>
 
-                            <span>Networking</span>
+                            <span>
+                                Networking
+                            </span>
 
                         </div>
 
                     </div>
+
 
                     <div
                         class="certificate-card reveal"
@@ -2403,13 +2519,18 @@
 
                         <div class="certificate-info">
 
-                            <h3>Introduction to Database</h3>
+                            <h3>
+                                Introduction to Database
+                            </h3>
 
-                            <span>Database Fundamentals</span>
+                            <span>
+                                Database Fundamentals
+                            </span>
 
                         </div>
 
                     </div>
+
 
                     <div
                         class="certificate-card reveal"
@@ -2425,13 +2546,18 @@
 
                         <div class="certificate-info">
 
-                            <h3>Building a Calculator</h3>
+                            <h3>
+                                Building a Calculator
+                            </h3>
 
-                            <span>Programming</span>
+                            <span>
+                                Programming
+                            </span>
 
                         </div>
 
                     </div>
+
 
                     <div
                         class="certificate-card reveal"
@@ -2447,13 +2573,18 @@
 
                         <div class="certificate-info">
 
-                            <h3>Building a Company</h3>
+                            <h3>
+                                Building a Company
+                            </h3>
 
-                            <span>Training</span>
+                            <span>
+                                Training
+                            </span>
 
                         </div>
 
                     </div>
+
 
                     <div
                         class="certificate-card reveal"
@@ -2481,6 +2612,7 @@
 
                     </div>
 
+
                     <div
                         class="certificate-card reveal"
                         data-image="./assets/certificates/intro%20to%20web%20development.png"
@@ -2506,6 +2638,7 @@
                         </div>
 
                     </div>
+
 
                     <div
                         class="certificate-card reveal"
@@ -2533,6 +2666,7 @@
 
                     </div>
 
+
                     <div
                         class="certificate-card reveal"
                         data-image="./assets/certificates/java%20programming.png"
@@ -2547,9 +2681,13 @@
 
                         <div class="certificate-info">
 
-                            <h3>Java Programming</h3>
+                            <h3>
+                                Java Programming
+                            </h3>
 
-                            <span>Programming</span>
+                            <span>
+                                Programming
+                            </span>
 
                         </div>
 
@@ -2561,6 +2699,8 @@
 
         </section>
 
+
+        <!-- EXPERIENCE -->
         <section id="experience">
 
             <div class="container">
@@ -2602,6 +2742,7 @@
 
                     </div>
 
+
                     <div class="timeline-item reveal">
 
                         <div class="timeline-date">
@@ -2626,6 +2767,7 @@
 
                     </div>
 
+
                     <div class="timeline-item reveal">
 
                         <div class="timeline-date">
@@ -2648,6 +2790,7 @@
                         </p>
 
                     </div>
+
 
                     <div class="timeline-item reveal">
 
@@ -2679,6 +2822,8 @@
 
         </section>
 
+
+        <!-- CONTACT -->
         <section id="contact">
 
             <div class="container">
@@ -2702,6 +2847,7 @@
 
                     <div class="contact-links">
 
+                        <!-- GITHUB -->
                         <a
                             class="contact-link"
                             href="https://github.com/shhroukalii"
@@ -2723,6 +2869,8 @@
 
                         </a>
 
+
+                        <!-- LINKEDIN -->
                         <a
                             class="contact-link"
                             href="https://www.linkedin.com/in/shrouk-ali-a73177352"
@@ -2744,6 +2892,8 @@
 
                         </a>
 
+
+                        <!-- GMAIL -->
                         <a
                             class="contact-link"
                             href="mailto:shroukk5877@gmail.com"
@@ -2772,6 +2922,7 @@
                             Gmail
 
                         </a>
+
 
                         <!-- PHONE -->
                         <a
@@ -2807,6 +2958,8 @@
 
     </main>
 
+
+    <!-- CERTIFICATE MODAL -->
     <div
         class="modal"
         id="certificateModal"
@@ -2846,6 +2999,8 @@
 
     </div>
 
+
+    <!-- WORK MODAL -->
     <div
         class="modal"
         id="workModal"
@@ -2899,6 +3054,8 @@
 
     </div>
 
+
+    <!-- SKILL MODAL -->
     <div
         class="modal"
         id="skillModal"
@@ -2945,7 +3102,12 @@
 
     </div>
 
+
     <script>
+
+        /* =========================
+           MOUSE GLOW
+        ========================= */
 
         const mouseGlow =
             document.getElementById("mouseGlow");
@@ -2962,6 +3124,11 @@
 
             }
         );
+
+
+        /* =========================
+           REVEAL ANIMATION
+        ========================= */
 
         const revealElements =
             document.querySelectorAll(".reveal");
@@ -3006,6 +3173,11 @@
             }
         );
 
+
+        /* =========================
+           PROFILE IMAGE FALLBACK
+        ========================= */
+
         const profileImage =
             document.getElementById(
                 "profileImage"
@@ -3028,6 +3200,11 @@
 
             }
         );
+
+
+        /* =========================
+           CERTIFICATE MODAL
+        ========================= */
 
         const certificateModal =
             document.getElementById(
@@ -3178,6 +3355,11 @@
             }
         );
 
+
+        /* =========================
+           WORK MODAL
+        ========================= */
+
         const workModal =
             document.getElementById(
                 "workModal"
@@ -3208,6 +3390,7 @@
                 "workModalList"
             );
 
+
         const workData = {
 
             fortress: {
@@ -3231,6 +3414,7 @@
 
             },
 
+
             securecorp: {
 
                 label:
@@ -3252,6 +3436,7 @@
                 ]
 
             },
+
 
             "security-labs": {
 
@@ -3275,6 +3460,7 @@
 
             },
 
+
             calculator: {
 
                 label:
@@ -3294,6 +3480,7 @@
                 ]
 
             },
+
 
             database: {
 
@@ -3315,6 +3502,7 @@
                 ]
 
             },
+
 
             soc: {
 
@@ -3339,6 +3527,7 @@
             }
 
         };
+
 
         document
             .querySelectorAll(".work-card")
@@ -3407,6 +3596,7 @@
                 }
             );
 
+
         function closeWorkModal() {
 
             workModal.classList.remove(
@@ -3423,10 +3613,12 @@
 
         }
 
+
         workClose.addEventListener(
             "click",
             closeWorkModal
         );
+
 
         workModal.addEventListener(
             "click",
@@ -3443,6 +3635,11 @@
 
             }
         );
+
+
+        /* =========================
+           SKILL MODAL
+        ========================= */
 
         const skillModal =
             document.getElementById(
@@ -3469,6 +3666,7 @@
                 "skillModalTags"
             );
 
+
         const skillData = {
 
             soc: {
@@ -3489,6 +3687,7 @@
 
             },
 
+
             network: {
 
                 title:
@@ -3508,6 +3707,7 @@
 
             },
 
+
             vulnerability: {
 
                 title:
@@ -3524,6 +3724,7 @@
                 ]
 
             },
+
 
             web: {
 
@@ -3542,6 +3743,7 @@
 
             },
 
+
             linux: {
 
                 title:
@@ -3558,6 +3760,7 @@
                 ]
 
             },
+
 
             tools: {
 
@@ -3578,6 +3781,7 @@
 
             },
 
+
             programming: {
 
                 title:
@@ -3595,6 +3799,7 @@
                 ]
 
             },
+
 
             ai: {
 
@@ -3615,6 +3820,7 @@
             }
 
         };
+
 
         document
             .querySelectorAll(".skill-card")
@@ -3683,6 +3889,7 @@
                 }
             );
 
+
         function closeSkillModal() {
 
             skillModal.classList.remove(
@@ -3699,10 +3906,12 @@
 
         }
 
+
         skillClose.addEventListener(
             "click",
             closeSkillModal
         );
+
 
         skillModal.addEventListener(
             "click",
@@ -3720,6 +3929,11 @@
             }
         );
 
+
+        /* =========================
+           ESCAPE KEY
+        ========================= */
+
         document.addEventListener(
             "keydown",
             function (event) {
@@ -3736,6 +3950,11 @@
 
             }
         );
+
+
+        /* =========================
+           NAV ACTIVE SECTION
+        ========================= */
 
         const sections =
             document.querySelectorAll(
